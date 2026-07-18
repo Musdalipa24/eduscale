@@ -7,6 +7,7 @@ Role
 
 
 const generateToken=require("../utils/generateToken");
+const logActivity = require("../utils/logActivity");
 
 
 
@@ -155,6 +156,12 @@ const token =
 generateToken(user);
 
 
+await logActivity(
+user.id,
+"Login",
+`User ${user.name} login ke sistem`
+);
+
 
 res.json({
 
@@ -167,7 +174,8 @@ user:{
 id:user.id,
 name:user.name,
 email:user.email,
-role:user.role.name
+role:user.role.name,
+role_id:user.role_id
 }
 
 });
@@ -186,5 +194,48 @@ message:error.message
 
 }
 
+
+};
+
+
+// GET PROFILE
+
+exports.getProfile = async(req,res)=>{
+
+try{
+
+const user = await User.findByPk(req.user.id,{
+
+include:[
+{
+model:Role,
+attributes:["id","name"]
+}
+],
+attributes:{ exclude:["password"] }
+
+});
+
+if(!user){
+return res.status(404).json({
+message:"User tidak ditemukan"
+});
+}
+
+res.json({
+id:user.id,
+name:user.name,
+email:user.email,
+role:user.role.name,
+role_id:user.role_id
+});
+
+}catch(error){
+
+res.status(500).json({
+message:error.message
+});
+
+}
 
 };

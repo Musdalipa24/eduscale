@@ -26,6 +26,26 @@ unique:true
 name:{
 type:DataTypes.STRING,
 allowNull:false
+},
+
+
+gender:{
+type:DataTypes.STRING
+},
+
+
+phone:{
+type:DataTypes.STRING
+},
+
+
+address:{
+type:DataTypes.TEXT
+},
+
+
+user_id:{
+type:DataTypes.INTEGER
 }
 
 
