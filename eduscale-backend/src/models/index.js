@@ -14,7 +14,7 @@ const Semester = require("./Semester");
 const TeachingJournal = require("./TeachingJournal");
 
 const BKCase = require("./BKCase");
-const BKCounselingNote = require("./BKCounseling");
+const BKCounselingNote = require("./BKCounseLing");
 const Violation = require("./Violation");
 const Achievement = require("./Achievement");
 
