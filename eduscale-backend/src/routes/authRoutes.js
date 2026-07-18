@@ -6,8 +6,11 @@ const router=express.Router();
 
 const {
 register,
-login
+login,
+getProfile
 }=require("../controllers/authController");
+
+const authMiddleware = require("../middleware/authMiddleware");
 
 
 
@@ -21,6 +24,13 @@ register
 router.post(
 "/login",
 login
+);
+
+
+router.get(
+"/profile",
+authMiddleware,
+getProfile
 );
 
 

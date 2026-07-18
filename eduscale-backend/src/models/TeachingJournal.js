@@ -33,6 +33,11 @@ type:DataTypes.INTEGER
 },
 
 
+semester_id:{
+type:DataTypes.INTEGER
+},
+
+
 date:{
 type:DataTypes.DATEONLY
 },

@@ -28,7 +28,23 @@ teacher_id:{
 },
 
 
+date:{
+    type:DataTypes.DATEONLY
+},
+
+
+type:{
+    type:DataTypes.STRING,
+    defaultValue:"Individual"
+},
+
+
 note:{
+    type:DataTypes.TEXT
+},
+
+
+result:{
     type:DataTypes.TEXT
 },
 

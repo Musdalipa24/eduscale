@@ -17,6 +17,16 @@ primaryKey:true
 name:{
 type:DataTypes.STRING,
 allowNull:false
+},
+
+
+wali_kelas_id:{
+type:DataTypes.INTEGER
+},
+
+
+academic_year_id:{
+type:DataTypes.INTEGER
 }
 
 

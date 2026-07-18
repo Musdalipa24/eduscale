@@ -35,6 +35,36 @@ type:DataTypes.STRING
 },
 
 
+birth_place:{
+type:DataTypes.STRING
+},
+
+
+birth_date:{
+type:DataTypes.DATEONLY
+},
+
+
+address:{
+type:DataTypes.TEXT
+},
+
+
+phone:{
+type:DataTypes.STRING
+},
+
+
+parent_name:{
+type:DataTypes.STRING
+},
+
+
+parent_phone:{
+type:DataTypes.STRING
+},
+
+
 class_id:{
 type:DataTypes.INTEGER
 },
