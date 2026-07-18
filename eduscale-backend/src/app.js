@@ -5,14 +5,7 @@ const cors=require("cors");
 const app=express();
 
 
-const corsOptions = {
-    origin: process.env.FRONTEND_URL || "http://localhost:5173",
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(express.json({ limit: "10mb" }));
 

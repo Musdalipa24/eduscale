@@ -19,24 +19,12 @@ export default function Sidebar() {
     const { user, logout, hasRole } = useAuth();
     const navigate = useNavigate();
 
-    const { user, logout, hasRole } = useAuth();
-    const navigate = useNavigate();
 
     const handleLogout = () => {
         logout();
         navigate("/");
     };
 
-    return (
-        <div className="
-        w-64
-        bg-blue-900
-        text-white
-        min-h-screen
-        p-5
-        flex
-        flex-col
-        ">
 
     const linkClass = ({ isActive }) =>
         `flex gap-3 items-center px-4 py-3 rounded-lg transition-all duration-200 ${
@@ -45,7 +33,6 @@ export default function Sidebar() {
                 : "text-blue-100 hover:bg-blue-800 hover:text-white"
         }`;
 
-            <nav className="space-y-2 flex-1">
 
     return (
 
@@ -59,12 +46,6 @@ export default function Sidebar() {
         flex-col
         ">
 
-                {hasRole("Admin", "Guru BK", "Wali Kelas", "Kepala Sekolah") && (
-                    <NavLink to="/students" className={linkClass}>
-                        <GraduationCap size={20} />
-                        Data Siswa
-                    </NavLink>
-                )}
 
             <h1 className="
             text-2xl
@@ -76,33 +57,15 @@ export default function Sidebar() {
                 EduScale
             </h1>
 
-                {hasRole("Admin") && (
-                    <NavLink to="/classes" className={linkClass}>
-                        <School size={20} />
-                        Data Kelas
-                    </NavLink>
-                )}
 
             <nav className="space-y-2 flex-1">
 
-                {hasRole("Admin", "Guru BK", "Wali Kelas", "Kepala Sekolah") && (
-                    <NavLink to="/bk" className={linkClass}>
-                        <ClipboardList size={20} />
-                        BK
-                    </NavLink>
-                )}
 
                 <NavLink to="/dashboard" className={linkClass}>
                     <Home size={20} />
                     Dashboard
                 </NavLink>
 
-                {hasRole("Admin") && (
-                    <NavLink to="/audit-log" className={linkClass}>
-                        <FileText size={20} />
-                        Audit Log
-                    </NavLink>
-                )}
 
                 {hasRole("Admin", "Guru BK", "Wali Kelas", "Kepala Sekolah") && (
                     <NavLink to="/students" className={linkClass}>
@@ -111,7 +74,6 @@ export default function Sidebar() {
                     </NavLink>
                 )}
 
-            </nav>
 
                 {hasRole("Admin") && (
                     <NavLink to="/teachers" className={linkClass}>

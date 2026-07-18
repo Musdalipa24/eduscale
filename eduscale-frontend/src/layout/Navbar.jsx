@@ -24,8 +24,6 @@ export default function Navbar() {
 
     const pageTitle = pageTitles[location.pathname] || "EduScale";
 
-    const { user } = useAuth();
-    const location = useLocation();
 
     return (
 
