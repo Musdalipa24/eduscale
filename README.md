@@ -10,9 +10,10 @@ EduScale adalah Sistem Manajemen Sekolah berbasis web yang dibangun dengan arsit
 
 | No | Nama | NIM | Tugas |
 |----|------|-----|-------|
-| 1 | Rezky Amaliah Rusli | 105841120223 | Project Lead, Frontend Development, UI/UX Design |
-| 2 | Musdalipa | _isi NIM_ | Backend Development, Database Design |
-| 3 | _isi nama_ | _isi NIM_ | Modul BK, Testing, Documentation |
+| 1 | Rezky Amaliah Rusli | 105841120223 | Frontend Development, UI/UX Design |
+| 2 | Musdalipa | 105841121623 | Backend Development, Database Design |
+| 3 | Nurdian | 105841118923 | System Architect |
+| 4 | Wafiq Azizah | 105841120923 | Security and Access Control Designer|
 
 > **Catatan**: Silakan lengkapi tabel di atas dengan data anggota kelompok yang sebenarnya.
 
