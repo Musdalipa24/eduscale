@@ -10,9 +10,12 @@ EduScale adalah Sistem Manajemen Sekolah berbasis web yang dibangun dengan arsit
 
 | No | Nama | NIM | Tugas |
 |----|------|-----|-------|
-| 1 | Musdalipa | _isi NIM_ | Project Lead, Frontend Development, UI/UX Design |
-| 2 | _isi nama_ | _isi NIM_ | Backend Development, Database Design |
-| 3 | _isi nama_ | _isi NIM_ | Modul BK, Testing, Documentation |
+| 1 | Rezky Amaliah Rusli | 10581120223| Project Lead, Frontend Development (React), UI/UX Design, penyusunan cover & kesimpulan laporan |
+| 2 | Musdalipa | 105841121623| Backend Development (Express.js), Database Design (PostgreSQL + Sequelize ORM), penyusunan bagian arsitektur, ERD, dan rancangan vCPU |
+| 3 | Nurdian | 105841118923 | Modul BK (Bimbingan Konseling), Testing & Quality Assurance, Dokumentasi, penyusunan use case dan analisis risiko |
+| 4 | Wafiq Azizah | 105841120923| Security and Access Control Designer .perancangan autentikasi (JWT), Role-Based Access Control (RBAC), analisis keamanan sistem, serta penyusunan analisis risiko dan mekanisme pengamanan akses pengguna. |
+
+
 
 > **Catatan**: Silakan lengkapi tabel di atas dengan data anggota kelompok yang sebenarnya.
 
