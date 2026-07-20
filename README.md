@@ -447,7 +447,7 @@ Buka browser: `http://localhost:5173`
 
 ## 🎥 Link Video Presentasi YouTube
 
-> _[Link video YouTube akan ditambahkan di sini]_
+https://youtu.be/aD4ZrXRPlL0
 
 ---
 
